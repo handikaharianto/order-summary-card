@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $pale-blue;
+  font-family: $font-primary;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
