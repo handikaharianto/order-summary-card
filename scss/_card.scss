@@ -1,5 +1,5 @@
 .card {
-  max-width: 375px;
+  max-width: 350px;
   width: 90%;
   border-radius: 15px;
   margin: 0 auto;
@@ -7,51 +7,59 @@
   box-shadow: 0px 12px 30px -20px $purple;
 
   &__img {
+    display: block;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
   }
 
   &__content {
-    padding: 1em 1.5em;
+    padding: 2em 1.5em;
     text-align: center;
 
     > * {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   &__title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   &__caption {
+    padding: 0 1.5em;
     color: $desaturated-blue;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
   &__plan {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     padding: 1em;
     border-radius: 15px;
     background-color: lighten($pale-blue, 3%);
 
+    &-info {
+      margin-left: 1.2rem;
+    }
+
     &-name {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       font-weight: 700;
     }
 
     &-price {
       color: $desaturated-blue;
-      font-size: 0.75rem;
+      font-size: 0.9rem;
     }
   }
 
   &__change-link {
+    margin-left: auto;
     color: $bright-blue;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     transition: all 0.3s linear;
 
     &:hover {
@@ -72,8 +80,10 @@
     padding: 1.2em;
     border: transparent;
     border-radius: 10px;
+    margin-bottom: 1.7em;
     background-color: $bright-blue;
     color: $very-pale-blue;
+    font-size: 0.95rem;
     transition: all 0.3s linear;
     box-shadow: 0px 10px 30px -5px $purple;
 
@@ -84,8 +94,10 @@
 
   &__cancel-btn {
     border: transparent;
+    margin: 0;
     background-color: transparent;
     color: $desaturated-blue;
+    font-size: 0.95rem;
     transition: all 0.3s linear;
 
     &:hover {
